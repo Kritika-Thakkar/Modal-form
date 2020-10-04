@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="myButton">Open this</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="text-align: center;">Certificate Details</h2>
+            </div>
+            <div class="modal-body">
+                <form method="POST">
+                    <div id="name">
+                        <h2 class="name">Name </h2>
+                        <input class="firstname" type="text" name="first_name" placeholder="Enter full name">
+                    </div>
+                    <div id="cert_type">
+                        <h2 class="name">Certificate Type</h2>
+                        <select class="option" name="category" id="category" onchange="changeFunc()" onchange="changeFunc1()">
+                            <option disabled="disabled" selected="selected">Select Category</option>
+                            <option>Competition/Workshops</option>
+                            <option>Sports</option>
+                            <option>Courses</option>
+
+                        </select>
+                    </div>
+                    <div id="evt_type">
+                        <h2 class="name">Subject</h2>
+                        <input class="event" type="text" name="subject" placeholder="Enter subject">
+                    </div>
+                    <div id="issue_dt">
+                        <h2 class="name">Date of issue</h2>
+                        <input class="date" type="date" name="issue_date">
+                    </div>
+                    <div id="evt_dt">
+                        <h2 class="name">Start Date</h2>
+                        <input type="date" class="date" name="start_date" placeholder="Enter date"><br>
+                        <h2 class="name">End Date</h2>
+                        <input type="date" class="date" name="end_date" placeholder="Enter date">
+                    </div>
+                    <div id="pos">
+                        <h2 class="name">Position</h2>
+                        <select class="option-pos" name="position" id="position">
+                            <option disabled="disabled" selected="selected">Select Category</option>
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                            <option>Participant</option>
+                        </select>
+                    </div>
+                    <div id="comp_dt">
+                        <h2 class="name">Date of Competition</h2>
+                        <input type="date" class="date" name="comp_dt">
+                    </div>
+                    <button type="submit">Submit!</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="modal.js"></script>
+</body>
+
+</html>
