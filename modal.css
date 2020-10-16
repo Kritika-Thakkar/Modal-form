@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+//please change the colors
 .modal {
     display: none; /*hidden*/
     position: fixed;
